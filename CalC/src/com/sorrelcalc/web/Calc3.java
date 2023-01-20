@@ -37,13 +37,16 @@ public class Calc3 extends HttpServlet{
 			} catch (ScriptException e) {
 				e.printStackTrace();
 			}
+		} else if (operator != null && operator.equals("C" )) {
+			exp = ""; //ƒÌ≈∞ ªË¡¶
 		} else {
 			exp += (value == null)? "" : value;
 			exp += (operator == null)? "" : operator;
 			exp += (dot == null)? "" : dot;
 		}
 		Cookie expCookie = new Cookie("exp", exp);
-
+		if (operator != null && operator.equals("C" )) 
+			expCookie.setMaxAge(0); //ƒÌ≈∞ ªË¡¶
 		response.addCookie(expCookie);
 		response.sendRedirect("calcpage");
 
