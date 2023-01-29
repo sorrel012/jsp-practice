@@ -1,3 +1,7 @@
+<%
+	int x = 3;
+	int y = 4;
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +26,7 @@ input {
 	<form action="calc3" method="post">
 	<table>
 		<tr>
-			<td class="output" colspan = "4">0</td> <!--4칸 사용--> 
+			<td class="output" colspan = "4">0</td>
 		</tr>
 		<tr>
 			<td><input type="submit" name="operator" value="CE" /></td>
