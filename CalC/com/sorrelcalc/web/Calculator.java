@@ -15,21 +15,8 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/calculator")
 public class Calculator extends HttpServlet{
-<<<<<<< HEAD
-	
-=======
 
->>>>>>> branch 'main' of https://github.com/sorrel012/jsp-practice
 	@Override
-<<<<<<< HEAD
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		System.out.println("doGET메소드가 호출되었습니다.");
-	}
-		
-	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		System.out.println("doPOST메소드가 호출되었습니다.");
-=======
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Cookie[] cookies = request.getCookies();
 
@@ -146,6 +133,5 @@ public class Calculator extends HttpServlet{
 		expCookie.setPath("/calculator");
 		response.addCookie(expCookie);
 		response.sendRedirect("calculator");
->>>>>>> branch 'main' of https://github.com/sorrel012/jsp-practice
 	}
 }
