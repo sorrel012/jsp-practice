@@ -10,16 +10,14 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/calculator")
 public class Calculator extends HttpServlet{
+	
 	@Override
-	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println("doGET메소드가 호출되었습니다.");
+	}
 		
-		if(req.getMethod().equals("GET")) { // html <body> <form method>가 get? (대문자 사용 필수)
-			System.out.println("GET 요청이 왔습니다.");
-		}
-		else if(req.getMethod().equals("POST")) {  // post? (대문자 사용 필수)
-			System.out.println("POST 요청이 왔습니다.");
-		}
-		
-//		super.service(req, resp);
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println("doPOST메소드가 호출되었습니다.");
 	}
 }
