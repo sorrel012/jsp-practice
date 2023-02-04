@@ -9,5 +9,7 @@
 </head>
 <body>
 	${result}입니다.<br>
+	${names[0]}<br>
+	${names[1]}
 </body>
 </html>

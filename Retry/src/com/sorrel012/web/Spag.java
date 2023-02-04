@@ -31,6 +31,9 @@ public class Spag extends HttpServlet{
 
 	request.setAttribute("result", result);
 
+	String[] names = {"sorrel", "hanee"};
+	request.setAttribute("names", names);
+
 	RequestDispatcher dispatcher
 	= request.getRequestDispatcher("spag.jsp");
 	dispatcher.forward(request, response);
