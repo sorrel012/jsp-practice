@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,6 +42,5 @@ pageContext.setAttribute("result", "hello");
 	%>
 	짝수입니다.
 	<% } %>
->>>>>>> branch 'main' of https://github.com/sorrel012/jsp-practice
 </body>
 </html>

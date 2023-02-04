@@ -19,7 +19,7 @@ public class Sorrel extends HttpServlet{
 		
 		PrintWriter out = response.getWriter();
 		
-		String cnt_ = request.getParameter("cnt"); //ÀÓ½Ãº¯¼ö µÚ¿¡ _ ºÙÀÓ.
+		String cnt_ = request.getParameter("cnt"); //ï¿½Ó½Ãºï¿½ï¿½ï¿½ ï¿½Ú¿ï¿½ _ ï¿½ï¿½ï¿½ï¿½.
 		
 		int cnt = 100;
 		if(cnt_ != null && !cnt_.equals("")) {
@@ -27,7 +27,7 @@ public class Sorrel extends HttpServlet{
 		}
 		
 		for(int i=0; i<cnt; i++) {
-			out.println((i+1) + "¾È³ç!<br>");
+			out.println((i+1) + "ï¿½È³ï¿½!<br>");
 		}
 	}
 }
