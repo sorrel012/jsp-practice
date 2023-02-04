@@ -7,10 +7,13 @@
 <meta charset="UTF-8">
 <title> spaghetti </title>
 </head>
+<%
+pageContext.setAttribute("result", "hello");
+%>
 <body>
-	${result}입니다.<br>
+	${requestScope.result}입니다.<br>
 	${names[0]}<br>
 	${names[1]}<br>
-	${notice.title}
+	${notice.title}<br>
 </body>
 </html>
