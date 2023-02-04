@@ -8,6 +8,6 @@
 <title> spaghetti </title>
 </head>
 <body>
-	<%= request.getAttribute("result") %>입니다.
+	${result}입니다.<br>
 </body>
 </html>
