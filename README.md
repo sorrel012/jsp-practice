@@ -1,7 +1,9 @@
 # ✏jsp 공부
 
-## 🖥eclipse(2021-03) : https://www.eclipse.org/downloads/packages/release/2021-03/r 
-## 🖥Apache Tomcat(9) : https://tomcat.apache.org/download-90.cgi
+## 🖥eclipse(2021-03)
+### https://www.eclipse.org/downloads/packages/release/2021-03/r 
+## 🖥Apache Tomcat(9)
+### https://tomcat.apache.org/download-90.cgi
 
 ### ✔Apache Tomcat 서버 설정
 ![image](https://user-images.githubusercontent.com/115568532/221415659-693a77e8-cd47-4fa4-9a96-b8d1bb90223c.png)
