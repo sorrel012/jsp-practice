@@ -13,6 +13,9 @@
 <br/>
 
 ### ✔Apache Tomcat 서버 설정
+![image](https://user-images.githubusercontent.com/115568532/230804602-0d6efc8f-8c40-44a0-8862-aec29fd58e3a.png)
+![image](https://user-images.githubusercontent.com/115568532/230804729-b9760588-91d8-4dd8-abfe-353bbb40bfa2.png)
+![image](https://user-images.githubusercontent.com/115568532/230804746-c64a79ce-2eca-4d11-8da9-e002252c392b.png)
 ![image](https://user-images.githubusercontent.com/115568532/221415659-693a77e8-cd47-4fa4-9a96-b8d1bb90223c.png)
 
 <br/>
