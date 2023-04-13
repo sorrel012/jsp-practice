@@ -1,14 +1,22 @@
-import javax.servlet.*;
-import javax.servlet.http.*;
-import java.io.*;
+import java.io.IOException;
+import java.io.PrintWriter;
 
-public class Sorrel extends HttpServlet  {
-	public void service(HttpServletRequest request,
-			HttpServletResponse response)
-			throws IOException, ServletException 
-	{
-		OutputStream os = response.getOutputStream();
-		PrintStream out = new PrintStream(os, true);
-		out.println("hello Servlet");
-	}
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/hi")
+public class Sorrel extends HttpServlet {
+    
+    @Override
+    public void service(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+        
+        PrintWriter out = resp.getWriter();
+        
+        for(int i = 0; i < 100; i++) {
+            out.println((i+1) + ": Hello Servlet!!");
+        }
+    }
 }
