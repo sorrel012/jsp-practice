@@ -1,4 +1,5 @@
 package com.sorrel012.web;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -8,19 +9,25 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/hi")
-public class Sorrel extends HttpServlet {
+@WebServlet("/hello")
+public class Sorrel extends HttpServlet{
+  @Override
+  protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     
-    @Override
-    public void service(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        
-        response.setCharacterEncoding("UTF-8");
-        response.setContentType("text/html; charset=UTF-8");
-        
-        PrintWriter out = response.getWriter();
-        
-        for(int i = 0; i < 100; i++) {
-            out.println((i+1) + ": Hello Servlet!!");
-        }
+    response.setCharacterEncoding("UTF-8");
+    response.setContentType("text/html; charset=UTF-8");
+    
+    PrintWriter out = response.getWriter();
+    
+    String cnt_ = request.getParameter("cnt"); //임시변수 뒤에 _ 붙임.
+    
+    int cnt = 100;
+    if(cnt_ != null && !cnt_.equals("")) {
+      cnt = Integer.parseInt(cnt_);
     }
+    
+    for(int i=0; i<cnt; i++) {
+      out.println((i+1) + "안녕!<br>");
+    }
+  }
 }
