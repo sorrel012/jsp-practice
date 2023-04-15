@@ -1,3 +1,4 @@
+package com.sorrel012.web;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -11,9 +12,12 @@ import javax.servlet.http.HttpServletResponse;
 public class Sorrel extends HttpServlet {
     
     @Override
-    public void service(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+    public void service(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         
-        PrintWriter out = resp.getWriter();
+        response.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html; charset=UTF-8");
+        
+        PrintWriter out = response.getWriter();
         
         for(int i = 0; i < 100; i++) {
             out.println((i+1) + ": Hello Servlet!!");
