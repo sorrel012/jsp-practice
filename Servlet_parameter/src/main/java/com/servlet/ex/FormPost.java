@@ -15,7 +15,11 @@ public class FormPost extends HttpServlet {
     
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+       resp.setContentType("text/html; charset=EUC-KR");
+       req.setCharacterEncoding("UTF-8");
        
+       String name = req.getParameter("name");
        String id = req.getParameter("id");
        String pw = req.getParameter("pw");
        
@@ -23,10 +27,10 @@ public class FormPost extends HttpServlet {
        String subject = req.getParameter("subject");
        String protocol = req.getParameter("protocol");
        
-       resp.setContentType("text/html; charset=UTF-8");
        PrintWriter writer = resp.getWriter();
        
        writer.println("<html><head></head><body>");
+       writer.println("이름 : " + name + "<br>");
        writer.println("아이디 : " + id + "<br>");
        writer.println("비밀번호 :" + pw + "<br>");
        writer.println("취미 : " + Arrays.toString(hobbies) + "<br>");
