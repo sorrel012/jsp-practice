@@ -2,6 +2,11 @@
 
 <br/>
 
+## 📄 공부 내용 정리
+### <a href='https://sorrel012.tistory.com/category/%EC%84%9C%EB%B2%84/Servlet-JSP'>블로그</a>
+
+<br>
+
 ## 🖥eclipse(2021-03)
 ### https://www.eclipse.org/downloads/packages/release/2021-03/r 
 
